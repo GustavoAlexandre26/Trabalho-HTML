@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisionTech - Conecte-se ao Futuro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #4facfe, #00f2fe);
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            color: white;
+            margin: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 600;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .banner {
+            background: url('https://p.turbosquid.com/ts-thumb/5g/TEWipU/Ml/r_viewport_005/png/1673573837/2560x1440/fit_q99/0551651a5b92f86ee002fbc6e7fde23670be411c/r_viewport_005.jpg') no-repeat center center/cover;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(16, 163, 212);
+            text-align: center;
+            padding: 2rem;
+        }
+        .banner h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #0077b6;
+        }
+        .sobre, .funcionalidades {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+        }
+        .sobre img, .funcionalidades img {
+            max-width: 500px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .texto {
+            max-width: 500px;
+        }
+        .texto p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        .depoimentos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .depoimento {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .depoimento p {
+            font-style: italic;
+        }
+        .depoimento strong {
+            display: block;
+            margin-top: 1rem;
+            color: #0077b6;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 500px;
+            margin: auto;
+        }
+        input, textarea {
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        button {
+            padding: 1rem;
+            background-color: #00b4d8;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0077b6;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #888;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<audio autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+    Seu navegador não suporta áudio HTML5.
+</audio>
+
+<header>
+    <h1>VisionTech</h1>
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#valores">Valores</a>
+        <a href="#qualidade">Qualidade</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<section class="banner">
+    <div>
+        <h2>Veja o Futuro com VisionTech</h2>
+        <p>Óculos inteligentes com acesso à internet na ponta dos olhos.</p>
+    </div>
+</section>
+
+<section id="sobre" class="section">
+    <h2>Sobre o Produto</h2>
+    <div class="sobre">
+        <img src="https://p.turbosquid.com/ts-thumb/5g/TEWipU/ys/r_viewport_006/png/1673573841/2560x1440/fit_q99/c3227487365f52f94fa57623676f54516565381f/r_viewport_006.jpg" alt="Óculos VisionTech">
+        <div class="texto">
+            <p>O VisionTech é mais do que um óculos. É uma experiência única de conexão com o mundo. Com tecnologia de ponta, oferece acesso direto à internet, integração com assistentes virtuais e uma tela discreta projetada especialmente para facilitar o seu dia a dia.</p>
+        </div>
+    </div>
+</section>
+
+<section id="funcionalidades" class="section">
+    <h2>Funcionalidades</h2>
+    <div class="funcionalidades">
+        <div class="texto">
+            <ul style="font-size: 1.2rem; line-height: 1.8;">
+                <li>Acesso à internet via Wi-Fi e 5G</li>
+                <li>Receba notificações em tempo real</li>
+                <li>Assistente de voz integrado</li>
+                <li>Câmera discreta para capturar momentos</li>
+                <li>Mapas de realidade aumentada</li>
+            </ul>
+        </div>
+        <img src="https://p.turbosquid.com/ts-thumb/5g/TEWipU/cO/screenshot035/png/1673573858/2560x1440/fit_q99/d002fba072e099bc4f541915c0fb51d54147e9dc/screenshot035.jpg" alt="Funcionalidades dos óculos">
+    </div>
+</section>
+
+<section id="valores" class="section">
+    <h2>Tabela de Valores</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Modelo</th>
+                <th>Preço</th>
+                <th>Disponibilidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>VisionTech Basic</td>
+                <td>R$ 2.499,00</td>
+                <td>Imediata</td>
+            </tr>
+            <tr>
+                <td>VisionTech Pro</td>
+                <td>R$ 3.499,00</td>
+                <td>Em até 7 dias</td>
+            </tr>
+            <tr>
+                <td>VisionTech Ultra</td>
+                <td>R$ 4.799,00</td>
+                <td>Encomenda</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="qualidade" class="section">
+    <h2>Qualidade do Produto</h2>
+    <ol style="font-size: 1.2rem; line-height: 1.8;">
+        <li>Durabilidade Extrema</li>
+        <li>Design Moderno e Confortável</li>
+        <li>Tecnologia de Última Geração</li>
+        <li>Compatibilidade com múltiplos sistemas</li>
+        <li>Assistência Técnica Especializada</li>
+    </ol>
+</section>
+
+<section class="section">
+    <h2>Vídeo sobre o Produto</h2>
+    <div style="display: flex; justify-content: center;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Jx2AnMeraaQ?si=cyYirJgl3-E4afeC" 
+        title="VisionTech Apresentação" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
+
+<section id="depoimentos" class="section">
+    <h2>Depoimentos de Clientes</h2>
+    <div class="depoimentos">
+        <div class="depoimento">
+            <p>"Simplesmente revolucionário! Uso o VisionTech todos os dias para reuniões e navegação. Super leve e eficiente."</p>
+            <strong>- Ana Alice</strong>
+        </div>
+        <div class="depoimento">
+            <p>"A tecnologia que sempre sonhei. A integração com a internet é perfeita e discreta."</p>
+            <strong>- Gabriel Mesquita</strong>
+        </div>
+        <div class="depoimento">
+            <p>"Nunca mais me perdi em uma cidade nova! Os mapas integrados são incríveis."</p>
+            <strong>- Pedro Henrique</strong>
+        </div>
+    </div>
+</section>
+
+<section id="contato" class="section">
+    <h2>Fale Conosco</h2>
+    <form>
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu e-mail" required>
+        <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    &copy; 2025 VisionTech - Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
